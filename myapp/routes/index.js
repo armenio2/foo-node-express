@@ -10,4 +10,8 @@ router.get('/hello', function(req, res, next) {
   res.send('Hello World!')
 });
 
+router.post('/post', function (req, res) {
+  res.send('Got a POST request')
+})
+
 module.exports = router;
